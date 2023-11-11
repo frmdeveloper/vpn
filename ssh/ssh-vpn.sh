@@ -161,6 +161,10 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7700 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7800 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7900 --max-clients 500
 
+cat >> /etc/issue.net << EOF
+<h1 style="text-align:center"><big><big><big><big><big><big><big><font color="green">FRM</font>
+EOF
+
 # setting port ssh
 cd
 sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
@@ -170,7 +174,7 @@ sed -i '/Port 22/a Port 51443' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 58080' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 22' /etc/ssh/sshd_config
-/etc/init.d/ssh restart
+sed -i 's@#Banner@Banner="/etc/issue.net"@g' /etc/ssh/sshd_config
 
 echo "=== Install Dropbear ==="
 # install dropbear
@@ -178,6 +182,7 @@ apt -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=143/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 50000 -p 109 -p 110 -p 69"/g' /etc/default/dropbear
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 /etc/init.d/ssh restart
