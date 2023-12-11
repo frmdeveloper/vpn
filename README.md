@@ -1,5 +1,10 @@
 Tambahkan alamat ip anda di
 https://github.com/frmdeveloper/vpn/blob/frm/permission/ip
+```
+Ini adalah sc colongan, gw mau ngilangin izin IP tapi males.
+```
+
+
 
 - Support Wildcard ✅
 - SSH Websocket : 80
@@ -19,6 +24,6 @@ https://github.com/frmdeveloper/vpn/blob/frm/permission/ip
 - Shadowsocks gRPC : 443
 
 
-
+**INSTALL**
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils curl unzip && wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && ./setup.sh
