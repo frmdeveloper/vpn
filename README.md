@@ -1,7 +1,7 @@
 # hanya untuk linux
 
-Tambahkan alamat ip anda di
-https://github.com/frmdeveloper/vpn/blob/frm/permission/ip
+Chat saya kalo mau masukin IP
++6281615901727
 ```
 Ini adalah sc colongan, gw mau ngilangin izin IP tapi males.
 ```
