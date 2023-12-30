@@ -174,7 +174,6 @@ sed -i '/Port 22/a Port 51443' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 58080' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 200' /etc/ssh/sshd_config
 sed -i '/Port 22/a Port 22' /etc/ssh/sshd_config
-sed -i 's@#Banner@Banner="/etc/issue.net"@g' /etc/ssh/sshd_config
 
 echo "=== Install Dropbear ==="
 # install dropbear
