@@ -198,20 +198,6 @@ clear
 wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
-cat> /root/.profile << END
-# ~/.profile: executed by Bourne-compatible login shells.
-
-if [ "$BASH" ]; then
-  if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-  fi
-fi
-
-mesg n || true
-clear
-menu
-END
-chmod 644 /root/.profile
 
 if [ -f "/root/log-install.txt" ]; then
 rm /root/log-install.txt > /dev/null 2>&1
