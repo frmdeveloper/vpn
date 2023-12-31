@@ -1,4 +1,4 @@
-# hanya untuk linux
+# hanya untuk debian
 
 Chat saya kalo mau masukin IP
 +6281615901727
