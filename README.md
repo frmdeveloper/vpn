@@ -1,4 +1,4 @@
-# hanya untuk debian
+# hanya untuk linux
 
 Chat saya kalo mau masukin IP
 +6281615901727
@@ -7,7 +7,7 @@ Ini adalah sc colongan, gw mau ngilangin izin IP tapi males.
 ```
 
 
-
+Jika websocket error, install python dulu!
 - Support Wildcard ✅
 - SSH Websocket : 80
 - SSH SSL Websocket : 443
