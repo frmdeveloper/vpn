@@ -199,6 +199,7 @@ sleep 0.5
 clear
 wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+test -e /usr/bin/python2 && cp /usr/bin/python2 /usr/bin/python || echo "please install python2 as python"
 clear
 
 if [ -f "/root/log-install.txt" ]; then
