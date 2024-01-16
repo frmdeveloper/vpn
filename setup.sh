@@ -168,7 +168,7 @@ chmod +x tools.sh
 ./tools.sh
 rm tools.sh
 clear
-red "Tambah Domain Untuk XRAY"
+red "Tambah Domain"
 echo " "
 read -rp "Input domain kamu : " -e dns
     if [ -z $dns ]; then
