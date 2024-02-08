@@ -33,11 +33,11 @@ sudo apt install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
  openssl openvpn easy-rsa fail2ban tmux \
  stunnel4 vnstat squid3 \
  dropbear  libsqlite3-dev \
- socat cron bash-completion ntpdate xz-utils sudo apt-transport-https \
+ socat cron bash-completion ntpdate xz-utils apt-transport-https \
  gnupg2 dnsutils lsb-release chrony
 
-curl -sSL https://deb.nodesource.com/setup_20.x | bash - 
-sudo apt-get install nodejs -y
+curl -sSL https://deb.nodesource.com/setup_21.x | bash - 
+apt-get install nodejs -y
 
 /etc/init.d/vnstat restart
 wget -q https://humdi.net/vnstat/vnstat-2.6.tar.gz
