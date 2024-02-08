@@ -28,4 +28,4 @@ Jika websocket error, install python2 sebagai python
 ___
 **INSTALL** (wajib masuk root)
 ```
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils curl unzip && wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && ./setup.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils curl unzip sudo && wget https://raw.githubusercontent.com/frmdeveloper/vpn/frm/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && ./setup.sh
